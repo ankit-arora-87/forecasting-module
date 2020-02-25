@@ -3,10 +3,12 @@ import "./ForecastStudiesForm.css";
 import axios from "axios";
 import { Form, Button } from "react-bootstrap";
 import ForecastListing from "../List/ForecastListing";
+import apiConfig from "../../../data/api_config.json";
 
 class ForecastStudiesForm extends React.Component {
   constructor(props) {
     super(props);
+    this.api = apiConfig.api_base_url;
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = props;
@@ -116,9 +118,7 @@ class ForecastStudiesForm extends React.Component {
       this.valid_monthly_increment &&
       this.valid_foreasting_months
     ) {
-      const url =
-        "http://localhost:8888/forecasting-module/api/forecasted_costs.php";
-
+      const url = this.api;
       if (this.cancel) {
         this.cancel.cancel();
       }
