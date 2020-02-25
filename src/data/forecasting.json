@@ -1,0 +1,27 @@
+[
+  {
+    "month_year": "Jan 2020",
+    "studies": "10000",
+    "cost_forecasted": "$1500"
+  },
+  {
+    "month_year": "Feb 2020",
+    "studies": "10500",
+    "cost_forecasted": "$1550"
+  },
+  {
+    "month_year": "Mar 2020",
+    "studies": "11000",
+    "cost_forecasted": "$1600"
+  },
+  {
+    "month_year": "Apr 2020",
+    "studies": "11500",
+    "cost_forecasted": "$1650"
+  },
+  {
+    "month_year": "May 2020",
+    "studies": "12000",
+    "cost_forecasted": "$1700"
+  }
+]
